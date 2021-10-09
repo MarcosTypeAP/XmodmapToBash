@@ -2,12 +2,12 @@
 
 > Useful for executing a .Xmodmap file on i3 windows manager.
 
-Use example: ```bash
-	python3 xmodmap-to-sh.py<br>
-		Save a new file? (y/N): y<br>
-		Source file path: source/file/path<br>
+Use example:
+
+	python3 xmodmap-to-sh.py
+		Save a new file? (y/N): y
+		Source file path: source/file/path
 		Destination file path: destination/file/path
-```
 
 To save the traslation in a new file without executing, add `-s` as the first argument and `destination/file/path` to the end of the command.
 
