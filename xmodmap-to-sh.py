@@ -4,16 +4,16 @@ import os
 
 def run():
 
-    try:
-        save = sys.argv[1] == "-s"
-        if save:
-            dest_file_path = sys.argv[len(sys.argv) - 1]
-            file_path = sys.argv[len(sys.argv) - 2]
-        else:
-            file_path = sys.argv[len(sys.argv) - 1]
-    except IndexError:
-        save = input("Save in a new file? (y/N): ")
-        if "y" in save or "Y" in save:
+    save = False
+
+    if len(sys.argv) > 1:
+        file_path = sys.argv[1]
+        if len(sys.argv) == 3:
+            dest_file_path = sys.argv[2]
+            save = True
+    else:
+        user_input = input("Save in a new file? (y/N): ")
+        if "y" in user_input or "Y" in user_input:
             save = True
         else:
             save = False
@@ -54,6 +54,8 @@ def run():
                 lines.insert(0, "#!/bin/bash\n")
                 lines.insert(1, "\n")
                 file.writelines(lines)
+        except FileNotFoundError:
+            print("Invalid destination path")
         except PermissionError:
             print("Permission denied")
             return
