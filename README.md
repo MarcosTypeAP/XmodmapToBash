@@ -3,9 +3,12 @@
 <p>Useful for executing a .Xmodmap file on i3 windows manager.</p>
 
 <p>Use example:<br>
-<tab><code>Save a new file? (y/N): y</code><br>
-<tab><code>Source file path: source/file/path</code><br>
-<tab><code>Destination file path: destination/file/path</code>
+	<code>
+		python3 xmodmap-to-sh.py<br>
+		Save a new file? (y/N): y<br>
+		Source file path: source/file/path<br>
+		Destination file path: destination/file/path
+	</code>
 </p>
 
 <p>To save the traslation in a new file without executing, add <code>-s</code> and <code>destination/file/path</code> to the end of the command.</p>
