@@ -12,7 +12,7 @@ def run():
         else:
             file_path = sys.argv[len(sys.argv) - 1]
     except IndexError:
-        save = input("Save a new file? (y/N): ")
+        save = input("Save in a new file? (y/N): ")
         if "y" in save or "Y" in save:
             save = True
         else:
