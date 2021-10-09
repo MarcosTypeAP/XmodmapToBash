@@ -13,7 +13,7 @@ Usage example:
 
 To save the traslation in a new file without executing, add `-s` as the first argument and `destination/file/path` to the end of the command.
 
-To just translate and run the commands, just add `source/file/path` as single argument.
+To just translate and run the commands, add `source/file/path` as single argument.
 
 Command usage example: `python3 xmodmap-to-sh.py -s source/file/path destination/file/path`
 
