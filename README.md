@@ -1,19 +1,17 @@
-<h1>Translates .Xmodmap file lines to bash lines</h1>
+# Translates .Xmodmap file lines to bash lines
 
-<p>Useful for executing a .Xmodmap file on i3 windows manager.</p>
+> Useful for executing a .Xmodmap file on i3 windows manager.
 
-<p>Use example:<br>
-	<code>
-		python3 xmodmap-to-sh.py<br>
+Use example: ```bash
+	python3 xmodmap-to-sh.py<br>
 		Save a new file? (y/N): y<br>
 		Source file path: source/file/path<br>
 		Destination file path: destination/file/path
-	</code>
-</p>
+```
 
-<p>To save the traslation in a new file without executing, add <code>-s</code> and <code>destination/file/path</code> to the end of the command.</p>
+To save the traslation in a new file without executing, add `-s` as the first argument and `destination/file/path` to the end of the command.
 
-<p>To only translate and execute the commands, just add <code>source/file/path</code> as unique argument.</p>
+To only translate and execute the commands, just add `source/file/path` as unique argument.
 
-<p>Command use example: <code>python3 xmodmap-to-sh.py -s source/file/path destination/file/path</code></p>
+Command use example: `python3 xmodmap-to-sh.py -s source/file/path destination/file/path`
 
