@@ -5,9 +5,9 @@
 Use example:
 
 	$ python3 xmodmap-to-sh.py
-	 Save a new file? (y/N): y
-	 Source file path: source/file/path
-	 Destination file path: destination/file/path
+	Save a new file? (y/N): y
+	Source file path: source/file/path
+	Destination file path: destination/file/path
 
 To save the traslation in a new file without executing, add `-s` as the first argument and `destination/file/path` to the end of the command.
 
