@@ -9,6 +9,8 @@ Use example:
 	Source file path: source/file/path
 	Destination file path: destination/file/path
 
+### Alse it can be used without user's input
+
 To save the traslation in a new file without executing, add `-s` as the first argument and `destination/file/path` to the end of the command.
 
 To only translate and execute the commands, just add `source/file/path` as unique argument.
